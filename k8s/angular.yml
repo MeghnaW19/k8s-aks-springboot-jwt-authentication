@@ -1,0 +1,10 @@
+#Create a Deployment by using the image pushed to Docker Hub
+#Use containerPort 4200
+apiVersion: apps/v1
+
+---
+
+    
+#Create the Service of type LoadBalancer and use the created Deployment as selector
+#Use port 4200
+apiVersion: v1

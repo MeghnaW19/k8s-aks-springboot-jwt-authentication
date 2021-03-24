@@ -1,0 +1,4 @@
+#Create ConfigMap with key and value, to be accessed by MySQL and SpringBoot application
+#Define key values for `mysql_database`, `mysql_url` used by UserService and ProfileServic to connect to MySQL
+apiVersion: v1
+kind: ConfigMap

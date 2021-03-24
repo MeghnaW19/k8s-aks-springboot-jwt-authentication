@@ -1,0 +1,15 @@
+#Define Persistent Volumes object named 'mysql-volume'
+apiVersion: v1
+---
+
+#  Define a Persistent Volume Claim named `mysql-claim` that can be used by a Pod to gain access to the Persistent Volumes
+apiVersion: v1
+
+---
+#Define a Deployment named `mysql` by using the latest mysql image from Docker Hub
+#Use containerPort 3306.
+apiVersion: apps/v1
+
+---
+#Define a Service named `mysql` of type ClusterIP and use the above created Deployment as selector
+apiVersion: v1

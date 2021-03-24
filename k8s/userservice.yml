@@ -1,0 +1,13 @@
+#Create a Deployment by using the image pushed to Docker Hub
+#Use containerPort 8081
+#while creating the deployment, get the values from ConfigMap and secret and follow the below instructions
+#Use the name as `MYSQL_URL` for the key which has to accessed from ConfigMap, which is used in the UserService
+#Use the names as follows `MYSQL_USERNAME` - username, `MYSQL_PASSWORD` - password for the values access from Secret
+
+apiVersion: apps/v1
+
+---
+#Create the Service of type LoadBalancer and use the above created Deployment as selector
+#Use port 8081
+
+apiVersion: v1
